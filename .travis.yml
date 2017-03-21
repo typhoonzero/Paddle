@@ -17,9 +17,8 @@ env:
     - JOB=PRE_COMMIT
   global:
     - secure: "nQdC5nGHfVUgoFaTN9HaCGminFgiIFXSbK7sSlBasVLrChVVRB0UZKtTnhavgiNa9rnCSIFHWiIJTZHkM+58fOzT8XGE/+YNr3klhLGoiNSTO7kgHc9+q07J7QGdoyfqTy5IJg7QXwgS3CYOan6W7L8WHy/Ms6LpsPm+ZeqOu1b2Fbqev/Agga+UJU1du5iuaAnFCo5CdpB1pIQ21YPAUh4CuVsXeJUAiF8wqAjTs1Mse4iLP4peQjpvyzQf2GX3zHv3Jbx7aG4raN26nD8i9z+janRTMbFTd33yG/sUGOF5EZ/kkUh2RIrHGD9UfpImVjD3pj5ghJ+ojWkG27sbLVmEiaptb+n/B3SAGznivlLxUllSiylcpJ1/MRz6DB0N4EcroxPpDfmnlaFz6WZbdtRURA83gOXeLRWKQZPLWBbHwyqZDXdyb08As5tMlchTdyw1r4Au61HOTtrw9h/zJCdsV+T2echDZcEqdZd3WoIyyZQZdoFRuoKPIcTN/uaL71mCfpswPVQ3YdflJtkc1zTQxhQomb9PUJZgKI2b+tagz/lpBMHjMpjQxJnOdHLto/pbauvi38kC6VPJiwClQ8mTsibWhPovTI0DmT3OjwbLUnCqo3AsMdu1QDu7uqGszfH/pwQwQ9yufmlNkEUmvgSPGD4YxWUVRVkjb4u/mFs="  # DOCKER_EMAIL
-    - secure: "trVeaDBFRK8D5GSWbpc5XkQaaYcDAMZkk7vOjrPHAP9igrsYe9NBioSwE6QGJnbS25Wy1HC14MYcXZReF+RR3zVN69xiDREwAS+56TC05FYc6LOrITx42mEZZ59ud30bLg6Gk70OHE/0szclmXhIGLyDw4Tn9UMfk//RO5xU75ZHQapNrVyXC4WkdrxsXxgimef3j8liU/otjZAZ+Wt3n3rSMYzFfygflsIMtPtwk7MSjCuO7ACLic8t05rpA+4MeddT9uJxIetuoL1CUSy6jJjNzvU3hCOA537taUGJsmXyDrrl2vVWJDJdzDoUglLSGKQy/aG6exGQu2LYHnnX97LbRpl+Q9GNek2fCYLUFMafFBA1QAJyTUvaZDLNs/QvPxohMRitHuaX+wvAlgTOvkJKziK7RTBDg+nYC3c2xES273vMqOyHb994yK0Uja6/1jA8AA5KmVNVDvaMEDDRRafYS5sdlVuH5o+jl99O20MPUp/1ffIrQl37EW1C8S2NCxhInz6ObhXl84BcYeNIyrF4vtaZOZVcjaLepxgyzQxqRFJoBBClSwmuO8JrwPhHRGex1onhbJB5LUx+BMzDwRZdozgv8kvK1xVFfXFFwYvSN3x0V+iacT7GnHooBfYa5yee4/hjRTLVRK8bFSpDi9gJerdSB7fopUJFwH/ZPq0="
-    - secure: "rF42ianm232JnTJ2/hrIAnM7jVV45xEh7zdb8rt6xlCiKBP6k+k8qXaMIi1/Mdlc3jSluRRn6d/n0QOVGaGgESW34xRYeuQTwePRQXOA7N6MKTjzblYqR9DbA5DqO1Bm8hAj66gwBlNJ45gTDRsKxvQvEQYC7Ga5AS0GVu0fiRXbQ7CMZI2JmfvmZk1d1T033V5n+Dqxz+4ZtAe55lAW1bkOWFoAcvwMw9Ou7JUL96kFhjJgy3C/Yh2RrELfr4VusapgmjaVWSG5DzeYGE3XNBsd68quT4O+CxQYBuxhztWED6SVGMYSTqjTrmhcUAFn+lU43f/XcQPRTyOBoudCPjnEjFlRz+Wt7FjiIr5CxPQN3PK+jXu8mTgvwIn7BDU+wNksBLNKej5UyndxgN1xNZNFiRUq5kcyWJCn8NvWmUN82asnghHq2IHg4Nssl95eLbmN1gUCjHu50suzoqY0ZFMY+sCq+/YIbK9u6CCTgiWOEnm1xYJMqOFKSZDGCBlWMB+6Uo/czrBy6ZbYXKNVct+K3Y6evuyzEx3FbHsYfGM+23I2qFItJ9HL+X7RLgV/yvghiV8NJ2T0ec7hm/2VpKRv9f83M333dnkd3dNiPLn5fAVNwudhklt2odz1ihOWpBL4NupzYik0TMyJjMX2NrCuFW5dQkvCJXZtU1Xu3Ic="
-
+    - secure: "LeMMn7lgvGss2xn9Y9PNGYdsz+aOvfqXuMGV1H8kREj2OSblbTmVFM2JpMKyCKvNsjsA9RdX+y8h2iF6LZcjr8uAblZFYFbyWt02RecrLglXrt/sjnJMX2gBmLroYymmeXsKngdAyMrpCeaP+d8Eas5xOdthEWbulyYQrv51JIa/h22zpQS6tcP7/PmPSsQt9kIn6rhhxBf6O/sizxhtlRzSMhbmqkfiaJFr5fIULwzLRWOfQrkjbpGnYnOUqleKbwqnf3LTp7mzCTT+5PtFpRn2IyVExX0UnGK3T0mG1YkTsx88R1RwGee9eChzwqQ8dEQxrQZ9C6IvJ9Rtaj9FarNMfbrc2WQ3N0KhBFmVz7v74GuB1w2aYLTACD2gblY7EiYu90DsrJvZohC4QoTcvtA2aamDBU4iCJRw+q0jTH4bpqgn3SPY91sNmd6WNvlwZAY8oZrCrtiwfIrNSXOXYKmZMPSzJo4xAp3jFMRhtubXFVJ8gJIvZ/ElIydSjg1+SUpsRhBoD7TDGSepyu7RZZzdtksDb9FHW461Vtwf0P7dTS//7hMQdvv377UgbL5X980dLvqPoy9862k2XxTQbQsMjxA6+gZALS9LzWhUoWqQ9OeDh0BSb9Z1XQQy9zZAe3jd9h3s2JwiAhJAAsokSOTqJQbarJd+8EyT5dcUIjc="
+    - secure: "JkgriulVw8Q84f7L0/vb54H+vxSr3+UFqhf0t48Lvjqca19Sjy4MQvqRClhCHj4Be5VITCyiGzWUQRWuByoBVj86GCIG0chSc/13fAtBo3VmAKWyMu6chV2u5Wr8/N4cmVnbUkd7gyRi4PKk7g8RA9nEJWlGTNONYLR1efOyPaS//cHUVacsz9TyrMm5lwz4h3VpvzXthQbFPq5Q4OWgpKkdGQyYRx2VZ3QV4UufUvdi/pZH57CeN/9TOw4KSF8kaAgkKXWWasrsGTQc8XKlSRRg/7sfb1n7t2gsSN18aIZ/jKKaurk8/KrU7jgAJIiy4bqDXVmwPiTL0f292u/Q3wlfsWDmGx96QEvtvvU9GjouJnssYT/y3Z+ZdZwNbfAzY/VM+/jXERWma/VwSxAWLXC9ppp+VffapDHUZT8L/ysmjmEDq5JuIRAnT7ARJxo3g3xe/iIKEFbepmTaRIrJPbXdh3vnvnpaXhHkpO6DoqxoYD5pWvhHRSkBLVoMojNTw873BFhVknzndQdTsv4QoHSWPSWRh7a0JuCOJRTzKLS2zswsiwz08qF0jt8Qh0yX4R4SmKrX4xwA+OrHkpOcEck8KtS9C8nbiEHf3Vey5MgB/kplw/f8tSwDVa7h4R2UibTT4McqXZfnFAhA8uW00AMoTHKdmylZ+aQYKTtv3Qk="
 addons:
   apt:
     packages:
@@ -68,8 +67,7 @@ after_success:
   - export REPO2=typhoon1986/paddle
   - export REPO3=typhoon1986/paddle
   - export TAG=`if [ "$TRAVIS_BRANCH" == "develop" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
-  - echo "current building: ${TRAVIS_TAG}"
-  - if [[ "$TRAVIS_TAG" =~ ^[0-9]+\.[0-9]+\.[0-9]+((a|b|rc)[0-9]+)$ ]]; then
+  - if [[ "$TRAVIS_TAG" =~ ^[0-9]+\.[0-9]+\.[0-9]+((a|b|rc)[0-9]+)$ && JOB="DOCS" ]]; then
     docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS;
     docker build -t paddle:dev .;
     docker run -v $PWD:/paddle -e "WITH_GPU=OFF" -e "WITH_AVX=ON" -e "TEST=OFF" -e "PADDLE_VERSION=${TRAVIS_TAG}" paddle:dev;
