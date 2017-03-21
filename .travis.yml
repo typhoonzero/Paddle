@@ -67,7 +67,7 @@ after_success:
   - export REPO2=typhoon1986/paddle
   - export REPO3=typhoon1986/paddle
   - export TAG=`if [ "$TRAVIS_BRANCH" == "develop" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
-  - if [[ "$TRAVIS_TAG" =~ ^[0-9]+\.[0-9]+\.[0-9]+((a|b|rc)[0-9]+)$ && $JOB="DOCS" ]]; then
+  - if [[ "$TRAVIS_TAG" =~ ^[0-9]+\.[0-9]+\.[0-9]+((a|b|rc)[0-9]+)$ ]] && [ $JOB == "DOCS" ]; then
     docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS;
     docker build -t paddle:dev .;
     docker run -v $PWD:/paddle -e "WITH_GPU=OFF" -e "WITH_AVX=ON" -e "TEST=OFF" -e "PADDLE_VERSION=${TRAVIS_TAG}" paddle:dev;
@@ -80,7 +80,7 @@ after_success:
     docker build -t paddle:gpu-noavx -f build/Dockerfile .;
     for image in "paddle:dev" "paddle:latest" "paddle:gpu" "paddle:noavx" "paddle:gpu-noavx";
     do
-        for r in $REPO1 $REPO2 REPO3;
+        for r in $REPO1 $REPO2 $REPO3;
         do
             repo=$(cat $image | awk -F":" '{print $1}');
             localtag=$(cat $image | awk -F":" '{print $2}');
