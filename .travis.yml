@@ -63,7 +63,6 @@ notifications:
   email:
     on_success: change
     on_failure: always
-
 after_success:
   - export REPO1=typhoon1986/paddle
   - export REPO2=typhoon1986/paddle
@@ -73,21 +72,20 @@ after_success:
   - if [[ "$TRAVIS_TAG" =~ ^[0-9]+\.[0-9]+\.[0-9]+((a|b|rc)[0-9]+)$ ]]; then
     docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS;
     docker build -t paddle:dev .;
-    # build paddle deb in docker
-    docker run -v $PWD:/paddle -e "WITH_GPU=OFF" -e "WITH_AVX=ON" -e "TEST=OFF" -e "PADDLE_VERSION=${TRAVIS_TAG}" paddle:dev
+    docker run -v $PWD:/paddle -e "WITH_GPU=OFF" -e "WITH_AVX=ON" -e "TEST=OFF" -e "PADDLE_VERSION=${TRAVIS_TAG}" paddle:dev;
     docker build -t paddle:latest -f build/Dockerfile .;
-    docker run -v $PWD:/paddle -e "WITH_GPU=ON" -e "WITH_AVX=ON" -e "TEST=OFF" -e "PADDLE_VERSION=${TRAVIS_TAG}" -e "DELETE_BUILD_CACHE=OFF" paddle:dev
+    docker run -v $PWD:/paddle -e "WITH_GPU=ON" -e "WITH_AVX=ON" -e "TEST=OFF" -e "PADDLE_VERSION=${TRAVIS_TAG}" -e "DELETE_BUILD_CACHE=OFF" paddle:dev;
     docker build -t paddle:gpu -f build/Dockerfile .;
-    docker run -v $PWD:/paddle -e "WITH_GPU=OFF" -e "WITH_AVX=OFF" -e "TEST=OFF" -e "PADDLE_VERSION=${TRAVIS_TAG}" -e "DELETE_BUILD_CACHE=OFF" paddle:dev
+    docker run -v $PWD:/paddle -e "WITH_GPU=OFF" -e "WITH_AVX=OFF" -e "TEST=OFF" -e "PADDLE_VERSION=${TRAVIS_TAG}" -e "DELETE_BUILD_CACHE=OFF" paddle:dev;
     docker build -t paddle:noavx -f build/Dockerfile .;
-    docker run -v $PWD:/paddle -e "WITH_GPU=ON" -e "WITH_AVX=OFF" -e "TEST=OFF" -e "PADDLE_VERSION=${TRAVIS_TAG}" -e "DELETE_BUILD_CACHE=OFF" paddle:dev
+    docker run -v $PWD:/paddle -e "WITH_GPU=ON" -e "WITH_AVX=OFF" -e "TEST=OFF" -e "PADDLE_VERSION=${TRAVIS_TAG}" -e "DELETE_BUILD_CACHE=OFF" paddle:dev;
     docker build -t paddle:gpu-noavx -f build/Dockerfile .;
     for image in "paddle:dev" "paddle:latest" "paddle:gpu" "paddle:noavx" "paddle:gpu-noavx";
     do
         for r in $REPO1 $REPO2 REPO3;
         do
-            repo=$(cat $image | awk -F: '{print $1}')
-            localtag=$(cat $image | awk -F: '{print $2}')
+            repo=$(cat $image | awk -F: '{print $1}');
+            localtag=$(cat $image | awk -F: '{print $2}');
             docker tag $image $r:$TRAVIS_TAG-$localtag;
             docker push $r:$TRAVIS_TAG-$localtag;
             docker tag $image $r:localtag;
