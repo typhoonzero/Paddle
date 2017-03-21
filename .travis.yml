@@ -68,8 +68,7 @@ after_success:
   - export REPO2=typhoon1986/paddle
   - export REPO3=typhoon1986/paddle
   - export TAG=`if [ "$TRAVIS_BRANCH" == "develop" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
-  # do docker build only when this build is for a git tag, tag must be in for form: 0.10.0rc2
-  - echo "current building: " $TRAVIS_TAG
+  - echo "current building: ${TRAVIS_TAG}"
   - if [[ "$TRAVIS_TAG" =~ ^[0-9]+\.[0-9]+\.[0-9]+((a|b|rc)[0-9]+)$ ]]; then
     docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS;
     docker build -t paddle:dev .;
