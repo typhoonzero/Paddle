@@ -84,7 +84,7 @@ after_success:
     do
         for r in $REPO1 $REPO2 REPO3;
         do
-            repo=$(cat $image | awk -F: '{print $1}');
+            repo=$(cat $image | awk -F":" '{print $1}');
             localtag=$(cat $image | awk -F: '{print $2}');
             docker tag $image $r:$TRAVIS_TAG-$localtag;
             docker push $r:$TRAVIS_TAG-$localtag;
